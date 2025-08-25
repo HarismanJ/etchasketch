@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <title>Draw with Etch-a-Sketch</title>
+</head>
+<body>
+    <div class="main-screen">
+        <div class="menu">
+            <img src="https://aimndz.github.io/etch-a-sketch/images/etch-a-sketch%20logo.png" alt="logo"></img>
+            <h1 class="gridTitle">Grid Size: 40x40</h1>
+            <input id="inputslider" type="range" min="1" max="100" value="40">
+
+            <div class="toggle-buttons">
+                <button>Clear</button>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+
+            </div>
+        </div>
+        <div class="etchasketch"></div>
+    </div>
+    
+</body>
+</html>
