@@ -1,6 +1,6 @@
 .main-screen{
     display: flex;
-    background-color: grey;
+    background-color: rgba(19,105,176,1);
     min-height: 100vh;
     min-width: 100%;
     justify-content: space-around;
