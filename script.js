@@ -30,6 +30,7 @@ function generateGrid(gridSize=40){ //default to 40x40
             }
         }
     });
+
 }
 
 
@@ -50,10 +51,15 @@ inputSlider.addEventListener("input",()=>{
     gridText.textContent=`Grid Size: ${inputSlider.value}x${inputSlider.value}`;
 });
 
+
+
 const clearBtn=document.querySelector(".menu>.toggle-buttons>button");
 clearBtn.addEventListener("click",()=>{
     generateGrid(inputSlider.value);
 });
+
+
+
 
 const toggleBtn=document.querySelector(".switch .round");
 toggleBtn.addEventListener("click",()=>{
@@ -70,9 +76,18 @@ colorPicker.forEach(element=>{
         if(selected){selected.style.opacity="1"};
         element.style.opacity="0.2";
         penColor=element.getAttribute("fill");
+        document.querySelector(".colored-text").textContent=`${penColor}`;
+        if(penColor==="white"){}
+        document.querySelector(".colored-text").style.color=penColor;
         selected=element;
     });
 });
+
+
+
+
+
+
 
 
 
