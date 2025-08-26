@@ -28,7 +28,7 @@
     border-style: solid;
     border-radius: 40px;
     border-color: red;
-    background-color: rgb(81, 102, 122); /*CHange this color so you can better see the white*/
+    background-color: rgb(129, 176, 220); /*CHange this color so you can better see the white*/
     padding: 15px;
     flex:1;
 }
